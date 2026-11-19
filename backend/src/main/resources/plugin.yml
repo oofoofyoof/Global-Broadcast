@@ -1,0 +1,15 @@
+name: GlobalBroadcast
+version: 1.0.0
+main: dev.globalbroadcast.backend.GlobalBroadcastBackend
+api-version: '1.21'
+description: Sends player broadcasts to every proxy connected to the shared Redis channel.
+commands:
+  globalbroadcast:
+    description: Broadcast a message across the network.
+    usage: /globalbroadcast <message>
+    aliases: [gb]
+    permission: globalbroadcast.use
+permissions:
+  globalbroadcast.use:
+    description: Allows use of the global broadcast command.
+    default: op
